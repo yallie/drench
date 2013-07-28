@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="#ff006e7f"
+    android:id="@+id/titleLayout">
+    <TextView
+        android:id="@+id/titleLeft"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Zyan Drench"
+        style="?android:attr/windowTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="4.0dp"
+        android:layout_marginRight="2.0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="0dp" />
+    <TextView
+        android:id="@+id/titleRight"
+        android:layout_alignParentRight="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="by yallie@yandex.ru"
+        android:textColor="#fff"
+        android:layout_weight="1"
+        android:layout_marginRight="4.0dp"
+        android:layout_marginLeft="2.0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="0dp" />
+</RelativeLayout>

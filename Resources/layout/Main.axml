@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainLinearLayout"
+    android:background="#003C45">
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:id="@+id/buttonsTable"
+        android:layout_weight="70"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_weight="10"
+            android:minWidth="25px"
+            android:minHeight="25px">
+            <Button
+                android:text="Play against Android"
+                android:id="@+id/twoPlayersGameButton"
+                android:background="#ffef881a"
+                android:textColor="#FFFFFF"
+                android:shadowColor="#96000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:layout_column="0"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_weight="10">
+            <Button
+                android:id="@+id/singlePlayerGameButton"
+                android:text="@string/hello"
+                android:background="#ffc23434"
+                android:textColor="#ffffffff"
+                android:shadowColor="#96000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:layout_column="0"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+        <TableRow
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/tableRow5"
+            android:layout_weight="10">
+            <Button
+                android:text="Start WiFi game"
+                android:id="@+id/startNetworkGameButton"
+                android:layout_column="0"
+                android:layout_height="match_parent"
+                android:background="#ff9c9f02"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:shadowColor="#96000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_weight="10"
+            android:layout_height="0dp">
+            <Button
+                android:text="Join WiFi game"
+                android:id="@+id/joinNetworkGameButton"
+                android:layout_column="0"
+                android:layout_height="match_parent"
+                android:background="#ff209a0b"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:shadowColor="#96000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+        <TableRow
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/tableRow4"
+            android:layout_weight="10">
+            <Button
+                android:text="Settings"
+                android:id="@+id/settingsButton"
+                android:layout_column="0"
+                android:background="#ff477df6"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:textColor="#ffffffff"
+                android:shadowColor="#96000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_weight="10">
+            <Button
+                android:text="About Zyan Drench"
+                android:id="@+id/aboutZyanButton"
+                android:background="#ff18a5c8"
+                android:textColor="#FFFFFF"
+                android:layout_column="0"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:shadowColor="#96000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="fill_parent"
+    p1:layout_height="fill_parent"
+    p1:id="@+id/rootLayout"
+    p1:padding="10dp"
+    p1:background="#003C45">
+    <TextView
+        p1:text="Single-player mode limit:"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/textView1" />
+    <RadioGroup
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/textView1"
+        p1:id="@+id/radioGroup1"
+        p1:orientation="horizontal">
+        <RadioButton
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:text="20"
+            p1:id="@+id/limit20button"
+            p1:checked="false"
+            p1:layout_marginRight="20dp" />
+        <RadioButton
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:text="30"
+            p1:id="@+id/limit30button"
+            p1:checked="true"
+            p1:layout_marginRight="20dp" />
+        <RadioButton
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:text="40 moves"
+            p1:id="@+id/limit40button"
+            p1:checked="false" />
+    </RadioGroup>
+    <TextView
+        p1:text="Android skill level:"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/radioGroup1"
+        p1:id="@+id/textView2"
+        p1:layout_marginTop="10.7dp" />
+    <RadioGroup
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/textView2"
+        p1:id="@+id/radioGroup2"
+        p1:orientation="horizontal">
+        <RadioButton
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:text="Dumb"
+            p1:id="@+id/dumbButton"
+            p1:layout_marginRight="10dp"
+            p1:checked="false" />
+        <RadioButton
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:text="Norm"
+            p1:id="@+id/normButton"
+            p1:layout_marginRight="10dp"
+            p1:checked="true" />
+        <RadioButton
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:text="Expert"
+            p1:id="@+id/expertButton"
+            p1:checked="false" />
+    </RadioGroup>
+    <CheckBox
+        p1:text="Symmetric two-player games"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/radioGroup2"
+        p1:id="@+id/symmetricCheck"
+        p1:layout_marginTop="10.7dp" />
+    <CheckBox
+        p1:text="Vibrate on button press"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/symmetricCheck"
+        p1:id="@+id/vibrateCheck"
+        p1:layout_marginBottom="20.7dp" />
+    <Button
+        p1:text="Save settings"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/vibrateCheck"
+        p1:id="@+id/saveSettingsButton"
+        p1:padding="20dp"
+        p1:background="#ff00993c"
+        p1:textColor="#ffffffff"
+        p1:shadowColor="#ff000000"
+        p1:shadowDx="1"
+        p1:shadowDy="1"
+        p1:shadowRadius="1"
+        p1:textAppearance="?android:attr/textAppearanceMedium" />
+    <Button
+        p1:text="Use defaults"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@id/saveSettingsButton"
+        p1:id="@+id/useDefaultSettingsButton"
+        p1:layout_below="@id/vibrateCheck"
+        p1:textColor="#ffffffff"
+        p1:shadowColor="#ff000000"
+        p1:shadowDx="1"
+        p1:shadowDy="1"
+        p1:shadowRadius="1"
+        p1:padding="20dp"
+        p1:background="#ffda4141"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_marginLeft="0.0dp" />
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D42110B8-B4E0-450F-B5F6-043004B75D3F}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Drench</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AssemblyName>Drench</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Zyan.Communication">
+      <HintPath>..\..\..\Externals\Zyan\bin\ReleaseAndroid\Zyan.Communication.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DrenchBoardActivity.cs" />
+    <Compile Include="Game\IDrenchGame.cs" />
+    <Compile Include="CustomApplication.cs" />
+    <Compile Include="Game\Point.cs" />
+    <Compile Include="ServerStartedActivity.cs" />
+    <Compile Include="Game\DrenchGameBase.cs" />
+    <Compile Include="Game\SinglePlayerGame.cs" />
+    <Compile Include="Game\TwoPlayerGame.cs" />
+    <Compile Include="Game\ComputerGameBase.cs" />
+    <Compile Include="Game\ComputerGameSimple.cs" />
+    <Compile Include="Game\ComputerGameModest.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Game\IDrenchGameServer.cs" />
+    <Compile Include="Game\DrenchBoard.cs" />
+    <Compile Include="Game\DrenchGameServer.cs" />
+    <Compile Include="Game\DrenchGameClient.cs" />
+    <Compile Include="Game\MoveEventArgs.cs" />
+    <Compile Include="Game\StopEventArgs.cs" />
+    <Compile Include="ConnectFormActivity.cs" />
+    <Compile Include="Game\ComputerGameExpert.cs" />
+    <Compile Include="SettingsActivity.cs" />
+    <Compile Include="HelpActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\layout-land\Main.axml" />
+    <AndroidResource Include="Resources\layout\ServerStarted.axml" />
+    <AndroidResource Include="Resources\layout\DrenchBoard.axml" />
+    <AndroidResource Include="Resources\layout-land\DrenchBoard.axml" />
+    <AndroidResource Include="Resources\layout\CustomTitle.axml" />
+    <AndroidResource Include="Resources\layout\ConnectForm.axml" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
+    <AndroidResource Include="Resources\layout\Settings.axml" />
+    <AndroidResource Include="Resources\layout-land\Settings.axml" />
+    <AndroidResource Include="Resources\layout-port\Settings.axml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Game\" />
+    <Folder Include="Resources\drawable\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Help.html" />
+    <AndroidAsset Include="Assets\Board.png" />
+    <AndroidAsset Include="Assets\Limit.png" />
+    <AndroidAsset Include="Assets\Server.png" />
+    <AndroidAsset Include="Assets\Skill.png" />
+  </ItemGroup>
+</Project>

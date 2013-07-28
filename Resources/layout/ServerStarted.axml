@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ff003c45">
+    <TextView
+        android:text="Server started. Your IP address:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_marginBottom="8.7dp"
+        android:layout_marginTop="8.7dp"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:text="192.168.255.225"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/serverAddressTextView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18.0dp"
+        android:layout_marginBottom="20.0dp" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar1"
+        android:layout_marginTop="10.6dp"
+        android:layout_marginBottom="17.3dp" />
+    <TextView
+        android:text="Waiting for the other player to join..."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/waitingTextView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5.3dp" />
+</LinearLayout>
