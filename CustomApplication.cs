@@ -17,9 +17,15 @@ namespace Drench
 	/// <summary>
 	/// Custom application class to manage data shared between different activities, i.e. ZyanConnection.
 	/// </summary>
-	[Application(Debuggable = true, Label = "Zyan Drench", ManageSpaceActivity = typeof(MainActivity))]
+	[Application(Debuggable = CustomApplication.Debuggable, Label = "Zyan Drench", ManageSpaceActivity = typeof(MainActivity))]
 	public class CustomApplication : Application
 	{
+#if DEBUG
+		public const bool Debuggable = true;
+#else
+		public const bool Debuggable = false;
+#endif
+
 		public CustomApplication(IntPtr javaReference, JniHandleOwnership transfer)
 			: base(javaReference, transfer)
 		{
