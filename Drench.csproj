@@ -43,7 +43,7 @@
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
     <Reference Include="Zyan.Communication">
-      <HintPath>..\..\..\Externals\Zyan\bin\ReleaseAndroid\Zyan.Communication.dll</HintPath>
+      <HintPath>Binaries\Zyan.Communication.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

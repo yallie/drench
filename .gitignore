@@ -2,3 +2,8 @@
 /Resources/drawable/Old-Icon1.png
 /Screenshots
 /Publish
+
+/Binaries
+/bin/Debug
+
+/obj/Debug

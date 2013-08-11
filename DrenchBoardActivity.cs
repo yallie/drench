@@ -168,9 +168,9 @@ namespace Drench
 				var textColor = color;
 				if (DrenchGame.ForbiddenColors.Contains(i) || DrenchGame.IsStopped)
 				{
-					color = Settings.DisabledColor;
 					enabled = false;
-					textColor = Color.Gray;
+					textColor = new Color((color.R + 180) / 2, (color.G + 180) / 2, (color.B + 180) / 2, 240);
+					color = Settings.DisabledColor;
 				}
 
 				button.SetBackgroundColor(color);
