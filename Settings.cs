@@ -27,6 +27,7 @@ namespace Drench
 			SinglePlayerMoves = 30;
 			VibrateDuration = 30;
 			SymmetricGame = true;
+			LeftHanded = false;
 			AndroidSkill = 1;
 			ServerAddress = "192.168.0.100";
 		}
@@ -37,6 +38,7 @@ namespace Drench
 			SinglePlayerMoves = prefs.GetInt("SinglePlayerMoves", SinglePlayerMoves);
 			VibrateDuration = prefs.GetInt("VibrateDuration", VibrateDuration);
 			SymmetricGame = prefs.GetBoolean("SymmetricGame", SymmetricGame);
+			LeftHanded = prefs.GetBoolean("LeftHanded", LeftHanded);
 			AndroidSkill = prefs.GetInt("AndroidSkill", AndroidSkill);
 			ServerAddress = prefs.GetString("ServerAddress", ServerAddress);
 		}
@@ -48,6 +50,7 @@ namespace Drench
 			editor.PutInt("SinglePlayerMoves", SinglePlayerMoves);
 			editor.PutInt("VibrateDuration", VibrateDuration);
 			editor.PutBoolean("SymmetricGame", SymmetricGame);
+			editor.PutBoolean("LeftHanded", LeftHanded);
 			editor.PutInt("AndroidSkill", AndroidSkill);
 			editor.PutString("ServerAddress", ServerAddress);
 			editor.Commit();
@@ -75,6 +78,8 @@ namespace Drench
 		public static int VibrateDuration;
 
 		public static bool SymmetricGame;
+
+		public static bool LeftHanded;
 
 		public static int AndroidSkill;
 

@@ -102,6 +102,9 @@ namespace Drench
 			// aapt resource value: 0x7f05001f
 			public const int joinNetworkGameButton = 2131034143;
 			
+			// aapt resource value: 0x7f050033
+			public const int leftHandedCheck = 2131034163;
+			
 			// aapt resource value: 0x7f050027
 			public const int limit20button = 2131034151;
 			

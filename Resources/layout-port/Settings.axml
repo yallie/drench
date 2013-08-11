@@ -92,12 +92,11 @@
         p1:layout_height="wrap_content"
         p1:layout_below="@id/symmetricCheck"
         p1:id="@+id/vibrateCheck"
-        p1:layout_marginBottom="20.7dp" />
+        p1:layout_marginBottom="0.0dp" />
     <Button
         p1:text="Save settings"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
-        p1:layout_below="@id/vibrateCheck"
         p1:id="@+id/saveSettingsButton"
         p1:padding="20dp"
         p1:background="#ff00993c"
@@ -106,14 +105,15 @@
         p1:shadowDx="1"
         p1:shadowDy="1"
         p1:shadowRadius="1"
-        p1:textAppearance="?android:attr/textAppearanceMedium" />
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_below="@id/leftHandedCheck" />
     <Button
         p1:text="Use defaults"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
         p1:layout_toRightOf="@id/saveSettingsButton"
         p1:id="@+id/useDefaultSettingsButton"
-        p1:layout_below="@id/vibrateCheck"
+        p1:layout_below="@id/leftHandedCheck"
         p1:textColor="#ffffffff"
         p1:shadowColor="#ff000000"
         p1:shadowDx="1"
@@ -123,4 +123,11 @@
         p1:background="#ffda4141"
         p1:textAppearance="?android:attr/textAppearanceMedium"
         p1:layout_marginLeft="10.0dp" />
+    <CheckBox
+        p1:text="Left-handed layout"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/vibrateCheck"
+        p1:id="@+id/leftHandedCheck"
+        p1:layout_marginBottom="10.0dp" />
 </RelativeLayout>

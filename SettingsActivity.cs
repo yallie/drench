@@ -43,6 +43,7 @@ namespace Drench
 			SkillExpertButton = FindViewById<RadioButton>(Resource.Id.expertButton);
 			SymmetricCheck = FindViewById<CheckBox>(Resource.Id.symmetricCheck);
 			VibrateCheck = FindViewById<CheckBox>(Resource.Id.vibrateCheck);
+			LeftHandedCheck = FindViewById<CheckBox>(Resource.Id.leftHandedCheck);
 			LoadCurrentSettings();
 
 			var saveSettingsButton = FindViewById<Button>(Resource.Id.saveSettingsButton);
@@ -79,6 +80,8 @@ namespace Drench
 
 		private CheckBox VibrateCheck { get; set; }
 
+		private CheckBox LeftHandedCheck { get; set; }
+
 		private void LoadCurrentSettings()
 		{
 			if (Settings.SinglePlayerMoves == 30)
@@ -108,6 +111,7 @@ namespace Drench
 			}
 
 			SymmetricCheck.Checked = Settings.SymmetricGame;
+			LeftHandedCheck.Checked = Settings.LeftHanded;
 
 			if (Settings.VibrateDuration > 0)
 			{
@@ -148,6 +152,7 @@ namespace Drench
 			}
 
 			Settings.SymmetricGame = SymmetricCheck.Checked;
+			Settings.LeftHanded = LeftHandedCheck.Checked;
 
 			if (VibrateCheck.Checked)
 			{

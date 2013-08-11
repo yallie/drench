@@ -21,8 +21,7 @@
         <TableRow
             android:id="@+id/tableRow1"
             android:minWidth="25px"
-            android:minHeight="25px">
-        </TableRow>
+            android:minHeight="25px" />
     </TableLayout>
     <TableLayout
         android:minWidth="25px"

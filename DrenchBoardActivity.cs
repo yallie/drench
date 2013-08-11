@@ -85,6 +85,14 @@ namespace Drench
 			PlayAgainButton = FindViewById<Button>(Resource.Id.playAgainButton);
 			UpdateMessageTable(DrenchGame.IsStopped, DrenchGame.CanRestartGame);
 
+			// apply left-handed mode
+			if (Settings.LeftHanded && rootLayout.Orientation == Orientation.Horizontal)
+			{
+				// move board table to the right of the buttons table
+				rootLayout.RemoveView(table);
+				rootLayout.AddView(table);
+			}
+
 			PlayAgainButton.Click += (sender, e) =>
 			{
 				vibrator.Vibrate(Settings.VibrateDuration);

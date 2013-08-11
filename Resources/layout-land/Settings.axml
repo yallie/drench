@@ -49,7 +49,7 @@
         p1:layout_height="wrap_content"
         p1:layout_below="@id/radioGroup1"
         p1:id="@+id/textView2"
-        p1:layout_marginTop="10.7dp" />
+        p1:layout_marginTop="0.0dp" />
     <RadioGroup
         p1:minWidth="25px"
         p1:minHeight="25px"
@@ -85,7 +85,7 @@
         p1:layout_height="wrap_content"
         p1:layout_below="@id/radioGroup2"
         p1:id="@+id/symmetricCheck"
-        p1:layout_marginTop="10.7dp" />
+        p1:layout_marginTop="0.0dp" />
     <Button
         p1:text="Save settings"
         p1:layout_width="wrap_content"
@@ -124,4 +124,13 @@
         p1:layout_height="wrap_content"
         p1:layout_below="@id/symmetricCheck"
         p1:id="@+id/vibrateCheck" />
+    <CheckBox
+        p1:text="Left-handed layout"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/symmetricCheck"
+        p1:id="@+id/leftHandedCheck"
+        p1:layout_marginBottom="0.0dp"
+        p1:layout_toRightOf="@id/vibrateCheck"
+        p1:layout_marginLeft="16.0dp" />
 </RelativeLayout>

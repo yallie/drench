@@ -6,17 +6,17 @@
     android:minWidth="25px"
     android:minHeight="25px"
     android:background="#ff003c45"
-    android:id="@+id/rootLayout">
+    android:id="@+id/rootLayout"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp">
     <TableLayout
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:id="@+id/boardTable"
-        android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
         android:layout_weight="60">
         <TableRow
             android:id="@+id/tableRow1"
@@ -30,14 +30,11 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:id="@+id/messageTable"
-        android:layout_marginLeft="0.0dp"
         android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
         android:stretchColumns="*"
         android:visibility="visible"
         android:layout_weight="40"
-        android:gravity="center"
-        android:layout_marginTop="10.0dp">
+        android:gravity="center">
         <TextView
             android:text="Play another round?"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -87,11 +84,8 @@
         android:layout_height="match_parent"
         android:id="@+id/buttonsTable"
         android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
         android:stretchColumns="*"
-        android:layout_weight="40"
-        android:layout_marginLeft="0dp">
+        android:layout_weight="40">
         <TableRow
             android:id="@+id/tableRow4"
             android:layout_height="60dp"
