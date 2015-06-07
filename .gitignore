@@ -2,9 +2,9 @@
 /Resources/drawable/Old-Icon1.png
 /Screenshots
 /Publish
-
 /Binaries
 /bin/Debug
-
 /obj/Debug
 /packages/Zyan.2.6
+/bin/Release
+/obj/Release
